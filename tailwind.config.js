@@ -9,6 +9,9 @@ module.exports = {
       colors:{
         'pale-pink':'#D7BDAE',
       },
+      screens:{
+        'lger': { 'raw': '(min-width: 1200px)'},
+      },
     },
   },
   plugins: [],
