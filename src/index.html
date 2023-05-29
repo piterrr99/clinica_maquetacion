@@ -10,35 +10,44 @@
         * {
             -webkit-tap-highlight-color: transparent;
         }
+        .group1:hover>ul{
+           translate: 80px;
+        }
     </style>
     <title>Document</title>
 </head>
 
 <body class="grid grid-cols-12 gap-4">
     <header class="w-full h-[71px] px-3.5 bg-white fixed flex items-center lg:h-[87px] lger:h-[98px]">
-        <div class="w-full flex justify-between items-center md:pr-[25px]">
-            <img src="/img/logo header.png" alt="Logo header" class="w-40 md:w-48">
-            <div class="relative">
-                <ul class="h-[20px] w-12 group"><a href="#" class="group font-poppins text-[16px] hover:text-pale-pink md:text-[20px]"><li class="mb-6">MENU</li>
+        <div class="w-full flex justify-between items-center md:pr-[25px] lg:space-x-36">
+            <img src="/img/logo header.png" alt="Logo header" class="w-40 md:w-48 lg:w-64">
+            <div class="relative lg:w-full">
+                <ul class="h-[20px] w-12 group lg:w-auto"><a href="#" class="group font-poppins text-[16px] hover:text-pale-pink md:text-[20px]"><li class="mb-6 lg:hidden">MENU</li>
                     <ul class="fixed top-[80px] left-[30px] invisible group-hover:visible w-screen h-[270px] pr-12 flex flex-col justify-between font-poppins text-left text-[14px] 
-                    md:top-[90px] md:text-[12px] md:h-[320px] md:left-[70px]">
-                        <a href="#" class="text-pale-pink"><li>INICIO</li></a> <hr class="text-slate-50 opacity-50">
-                        <a href="#" class="hover:text-pale-pink"><li>NUESTRA CLÍNICA</li></a><hr class="text-slate-50 opacity-50">
-                        <div class="relative flex justify-between mr-[10%]">
-                            <a href="#" class="hover:text-pale-pink"><li>ODONTOLOGÍA</li></a>
-                            <a href="#" class="text-pale-pink"><li class="">></li>
-                            <ul hidden>
-                                <li href="#">TRATAMIENTOS</li>
-                                <li href="#">CONÓCENOS</li>
-                                <li href="#">FINANCIACIÓN</li>
-                                <li href="#">RADIOLOGÍA DENTAL</li>
-                                <li href="#">ESCANER INTRAORAL</li>
-                            </ul></a>
-                        </div><hr class="text-slate-50 opacity-50">
-                        <a href="#" class="hover:text-pale-pink"><li>LOGOPEDIA</li></a><hr class="text-slate-50 opacity-50">
-                        <a href="#" class="hover:text-pale-pink"><li>ESTÉTICA</li></a><hr class="text-slate-50 opacity-50">
-                        <a href="#" class="hover:text-pale-pink"><li>MEDICINA ESTÉTICA</li></a><hr class="text-slate-50 opacity-50">
-                        <a href="#" class="hover:text-pale-pink"><li>PIDE TU CITA</li></a><hr class="text-transparent opacity-0">
+                    md:top-[90px] md:text-[12px] md:h-[320px] md:left-[70px]
+                    lg:relative lg:visible lg:flex-row lg:space-x-6 lg:w-auto lg:left-0 lg:right-[0px] lg:top-[0px] lg:pr-0 lg:text-[12px] lg:h-[30px] 
+                    lger:text-[15px] lger:space-x-1">
+                        <a href="#" class="text-pale-pink"><li>INICIO</li></a> <hr class="lg:hidden text-slate-50 opacity-50">
+                        <a href="#" class="hover:text-pale-pink lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink"><li>NUESTRA CLÍNICA</li></a><hr class="lg:hidden text-slate-50 opacity-50 ">
+                        
+                            <div class="relative flex justify-between lg:flex-col lg:w-[150px]">
+                                <a href="#" class="lg:pb-[15px] group/submenu lg:h-[24px]">
+                                    <li class="group-hover/submenu:text-pale-pink lg:transition-colors lg:ease-in-out lg:duration-300 lg:text-center">ODONTOLOGÍA</li>
+                                    <ul class="hidden lg:invisible lg:flex lg:flex-col lg:space-y-3 lg:shadow-md lg:px-[15px] lg:py-5 lg:w-[233px] lg:-translate-x-[60px] lg:transition lg:group-hover/submenu:visible lg:group-hover/submenu:translate-x-[0px] lg:duration-300 lg:ease-in ">
+                                        <li href="#" class="lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink lg:px-[20px]">TRATAMIENTOS</li>
+                                        <li href="#" class="lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink lg:px-[20px]">CONÓCENOS</li>
+                                        <li href="#" class="lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink lg:px-[20px]">FINANCIACIÓN</li>
+                                        <li href="#" class="lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink lg:px-[20px]">RADIOLOGÍA DENTAL</li>
+                                        <li href="#" class="lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink lg:px-[20px]">ESCANER INTRAORAL</li>
+                                    </ul>
+                                </a>
+                                <a href="#" class="text-pale-pink lg:text-inherit"><li class="hidden">></li></a>
+                            </div><hr class="lg:hidden text-slate-50 opacity-50">
+                        
+                        <a href="#" class="hover:text-pale-pink lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink"><li>LOGOPEDIA</li></a><hr class="lg:hidden text-slate-50 opacity-50">
+                        <a href="#" class="hover:text-pale-pink lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink"><li>ESTÉTICA</li></a><hr class="lg:hidden text-slate-50 opacity-50">
+                        <a href="#" class="hover:text-pale-pink lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink"><li>MEDICINA ESTÉTICA</li></a><hr class="lg:hidden text-slate-50 opacity-50">
+                        <a href="#" class="hover:text-pale-pink lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink"><li>PIDE TU CITA</li></a><hr class="lg:hidden text-transparent opacity-0">
                     </ul>
                 </a></ul>
             </div>
