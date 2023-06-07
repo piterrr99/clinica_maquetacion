@@ -6,3 +6,15 @@
     font-family: "Poppins";
     src: url(/fonts/Poppins-Medium.ttf);
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url(/fonts/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto-Light.ttf);
+}
