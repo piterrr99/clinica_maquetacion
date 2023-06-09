@@ -14,6 +14,7 @@ module.exports = {
         'dark-gray':'#2D2E30',
       },
       screens:{
+        'smer': { 'raw': '(min-width: 540px)'},
         'lger': { 'raw': '(min-width: 1200px)'},
       },
     },

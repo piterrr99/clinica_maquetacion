@@ -21,15 +21,15 @@
     <title>Document</title>
 </head>
 
-<body class="grid grid-cols-12 gap-4">
+<body>
     <header class="w-full h-[71px] px-3.5 bg-white fixed flex items-center lg:h-[87px] lger:h-[98px] z-50">
         <div class="w-full flex justify-between items-center md:pr-[25px] lg:space-x-36">
-            <img src="/img/logo header.png" alt="Logo header" class="w-40 md:w-48 lg:w-64">
+            <img src="/img/logo header.png" alt="Logo header" class="w-40 md:w-48 lg:w-64 lg:max-h-[87px]">
             <div class="relative lg:w-full">
                 <ul class="h-[20px] w-12 group lg:w-auto"><a href="#" class="group font-poppins text-[16px] hover:text-pale-pink md:text-[20px]"><li class="mb-6 lg:hidden">MENU</li>
                     <ul class="fixed top-[70px] left-[0px] bg-white pl-[30px] invisible group-hover:visible w-screen h-[270px] pr-12 flex flex-col justify-between font-poppins text-left text-[14px] 
-                    md:top-[90px] md:text-[12px] md:h-[320px] md:left-[70px]
-                    lg:relative lg:visible lg:flex-row lg:space-x-6 lg:w-auto lg:left-0 lg:right-[0px] lg:top-[0px] lg:pr-0 lg:text-[12px] lg:h-[30px] 
+                    md:text-[12px] md:h-[320px] md:pl-[70px]
+                    lg:relative lg:visible lg:flex-row lg:space-x-6 lg:w-auto lg:left-0 lg:right-[0px] lg:top-[0px] lg:pr-0 lg:text-[12px] lg:h-[30px] lg:pl-0
                     lger:text-[15px] lger:space-x-1">
                         <a href="#" class="text-pale-pink"><li>INICIO</li></a> <hr class="lg:hidden text-slate-50 opacity-50">
                         <a href="#" class="hover:text-pale-pink lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink"><li>NUESTRA CLÍNICA</li></a><hr class="lg:hidden text-slate-50 opacity-50 ">
@@ -37,7 +37,7 @@
                             <div class="relative flex justify-between lg:flex-col lg:w-[150px]">
                                 <a href="#" class="lg:pb-[15px] group/submenu lg:h-[24px]">
                                     <li class="group-hover/submenu:text-pale-pink lg:transition-colors lg:ease-in-out lg:duration-300 lg:text-center">ODONTOLOGÍA</li>
-                                    <ul class="hidden lg:invisible lg:flex lg:flex-col lg:space-y-3 lg:shadow-md lg:px-[15px] lg:py-5 lg:w-[233px] lg:-translate-x-[60px] lg:transition lg:group-hover/submenu:visible lg:group-hover/submenu:translate-x-[0px] lg:duration-300 lg:ease-in ">
+                                    <ul class="hidden bg-white lg:invisible lg:flex lg:flex-col lg:space-y-3 lg:shadow-md lg:px-[15px] lg:py-5 lg:w-[233px] lg:-translate-x-[60px] lg:transition lg:group-hover/submenu:visible lg:group-hover/submenu:translate-x-[0px] lg:duration-300 lg:ease-in ">
                                         <li href="#" class="lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink lg:px-[20px]">TRATAMIENTOS</li>
                                         <li href="#" class="lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink lg:px-[20px]">CONÓCENOS</li>
                                         <li href="#" class="lg:transition-colors lg:ease-in-out lg:duration-300 lg:hover:text-pale-pink lg:px-[20px]">FINANCIACIÓN</li>
@@ -58,20 +58,25 @@
         </div>
     </header>
     <main>
-        <div class="w-screen h-[114vw] bg-cover bg-center flex flex-col justify-end items-center pb-[200%]" style="background-image: url(/img/vladyslava-andriyenko-hiUA0SG6Pa8-unsplash-2-scaled-1.jpg);">
-            <p class="font-montserrat text-[55px] text-white uppercase">Recibe</p>
-            <p class="font-playfairdisplay text-[31px] text-white text-center px-[5%] leading-8">Una sobredosis de belleza y naturalidad</p>
+        <div class="w-screen h-[114vw] bg-cover bg-center flex flex-col justify-end items-center pb-[20%]
+        smer:h-[98vw] md:!h-[75vw] lg:!h-[36vw] lg:relative lg:top-[87px] lg:pb-[100px]
+        lger:top-[97px] " style="background-image: url(/img/vladyslava-andriyenko-hiUA0SG6Pa8-unsplash-2-scaled-1.jpg);">
+            <p class="font-montserrat text-[55px] text-white uppercase md:text-[76px] lg:text-[43px]">Recibe</p>
+            <p class="font-playfairdisplay text-[31px] text-white text-center px-[5%] leading-8 
+            md:text-[46px] md:leading-[45px] lg:text-[27px] lg:w-[500px] lg:leading-[30px]">Una sobredosis de belleza y naturalidad</p>
         </div>
-        <div class="md:flex">
+        <div class="md:flex lg:mt-[86px] lger:mt-[97px]">
             <div class="flex flex-col space-y-9 bg-dark-gray h-auto w-screen py-[50px] px-[22px] 
             font-playfairdisplay text-[15px] text-white text-center">
-                <div>
-                    <img src="/img/banner negro.png" alt="logo_amplio" class="w-full">
-                    <p class="">Tu clínica de odontología, logopedia y estética en Asturias</p>
-                </div>
-                <div>
-                    <p>Queremos enseñarte la fuerza que una sonrisa y un gesto hermoso pueden llegar a tener. <br>
-                        Te animanos a dar el paso hacia una belleza saludable.</p>
+                <div class="h-full m-auto flex flex-col space-y-9 justify-center items-center">
+                    <div>
+                        <img class="w-full max-w-[378px] mx-auto" src="/img/banner negro.png" alt="logo_amplio">
+                        <p class="">Tu clínica de odontología, logopedia y estética en Asturias</p>
+                    </div>
+                    <div>
+                        <p>Queremos enseñarte la fuerza que una sonrisa y un gesto hermoso pueden llegar a tener. <br>
+                            Te animanos a dar el paso hacia una belleza saludable.</p>
+                    </div>
                 </div>
             </div>
             <div class="w-screen h-[435px]">
@@ -85,81 +90,122 @@
                     <div class="relative col-start-1 col-end-6 ml-2 z-10 shadow-2xl top-2 h-auto">
                         <img class="w-full h-full object-fill shadow-2xl" src="/img/radiologia-dental-clinica-grado-scaled.jpg" alt="radiologia">
                     </div>
-                    <div class="flex-1 col-start-7 col-end-13">
-                        <div class="font-roboto text-[6px] uppercase w-auto">
+                    <div class="flex flex-col justify-center flex-1 col-start-7 col-end-13">
+                        <div class="font-roboto text-[6px] uppercase w-auto smer:text-[11px]">
                             <div class="bg-[#4b526a] text-white w-[45px] h-px"></div>
                             <p class="mt-6 text-[#4b526a]">ultima tecnologia</p>
                         </div>
-                        <p class="font-playfairdisplay text-[16px] mt-2 font-extralight">Diagnóstico con radiología incluida</p>
-                        <p class="font-roboto text-[9px] text-[#00000080] leading-[14px] pr-12 mt-3">Únicos en la zona en poner a tu disposición la última tecnología de diagnóstico: 
+                        <p class="font-playfairdisplay text-[16px] mt-2 font-extralight smer:text-[25px]">Diagnóstico con radiología incluida</p>
+                        <p class="font-roboto text-[9px] text-[#00000080] leading-[14px] pr-12 mt-3 
+                        smer:text-[17px] smer:leading-[22px]">Únicos en la zona en poner a tu disposición la última tecnología de diagnóstico: 
                         Ortopantomografía, telerradiografía lateral del cráneo, radiografía intraoral y
                         TAC dental.</p>
-                        <a class="" href="#"><p class="mt-8 font-roboto text-[6px] text-[#787878] uppercase">Más Información &rarr;</p></a>
+                        <a class="" href="#"><p class="mt-8 font-roboto text-[6px] text-[#787878] uppercase smer:text-[11px]">Más Información &rarr;</p></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="relative grid grid-cols-12 bg-[#F3EDE4] w-screen h-[103vw] py-14">
-            <img class="absolute col-start-9 col-end-12 bottom-[40%]" src="/img/logo icon.png" alt="logo">
+        <div class="relative grid grid-cols-12 bg-[#F3EDE4] w-screen h-[103vw] py-14
+        smer:h-auto smer:pb-[20%]">
+            <img class="absolute col-start-9 col-end-12 bottom-[40%] sm:bottom-[25%]" src="/img/logo icon.png" alt="logo">
             <div class="grid grid-cols-12 col-start-1 col-end-13">
                 <div class="col-start-2 col-end-6">
                     <div>
                         <div class="bg-[#4b526a] w-2/5 h-[2px]"></div>
-                        <p class="font-roboto text-[7px] uppercase mt-5">tu solo preocupate de sonreir</p>
-                        <p class="font-playfairdisplay text-[18px] mt-2">Financiación</p>
+                        <p class="font-roboto text-[7px] uppercase mt-5 smer:text-[11px]">tu solo preocupate de sonreir</p>
+                        <p class="font-playfairdisplay text-[18px] mt-2 smer:text-[25px]">Financiación</p>
                     </div>
-                    <p class="font-roboto text-[10px] text-[#00000080] leading-4 mt-1">Una ayuda para que cualquier paciente pueda recibir el mejor tratamiento
+                    <p class="font-roboto text-[10px] text-[#00000080] leading-4 mt-1 smer:text-[17px] smer:leading-[22px]">Una ayuda para que cualquier paciente pueda recibir el mejor tratamiento
                         odontológico ajustado a sus necesidades sin tener que pensar en las
                         repercusiones económicas</p>
-                    <p class="font-roboto text-[9px] text-[#00000080] mt-3">Hasta 60 meses de financiación</p>
-                    <p class="font-montserrat text-[7px] text-[#787878] mt-6">Más Información &rarr;</p>
+                    <p class="font-roboto text-[9px] text-[#00000080] mt-3 smer:text-[17px] smer:leading-[22px]">Hasta 60 meses de financiación</p>
+                    <p class="font-montserrat text-[7px] text-[#787878] mt-6 smer:text-[11px]">Más Información &rarr;</p>
                 </div>
                 <div class="col-start-7 col-end-13 z-10">
                     <img class="shadow-2xl" src="/img/financiacion-clinica-grado-2-1-scaled.jpg" alt="financiacion">
                 </div>
             </div>
         </div>
-        <div class="w-screen">
-            <div class="w-full px-[22px] py-[50px]">
-                <p class="font-poppins text-[13px] uppercase leading-8">nuevas técnicas de odontología y medicina estética en asturias</p>
-                <p class="font-playfairdisplay text-[32px] uppercase mt-3">clínica grado</p>
-                <p class="font-playfairdisplay text-[26px] mt-5">Disfruta de las Nuevas Técnicas de Odontología y Medicina Estética 
-                    mínimanente invasivas</p>
-                <p class="font-playfairdisplay text-[18px] text-pale-pink text-center">&laquo;El equilibrio, las proporciones adecuadas y la armonía de una 
-                    sonrisa y de un rostro radican en la naturalidad.&raquo;</p>
+        <div class="md:flex">
+            <div class="w-screen md:w-auto m-auto flex-[1]">
+                <div class="w-full px-[22px] py-[50px]">
+                    <p class="font-poppins text-[13px] uppercase leading-8">nuevas técnicas de odontología y medicina estética en asturias</p>
+                    <p class="font-playfairdisplay text-[32px] uppercase mt-3">clínica grado</p>
+                    <p class="font-playfairdisplay text-[26px] mt-5">Disfruta de las Nuevas Técnicas de Odontología y Medicina Estética
+                        mínimanente invasivas</p>
+                    <p class="font-playfairdisplay text-[18px] text-pale-pink text-center">&laquo;El equilibrio, las proporciones adecuadas y la armonía de una
+                        sonrisa y de un rostro radican en la naturalidad.&raquo;</p>
+                </div>
             </div>
-        </div>
-        <div class="w-screen h-[35vw] flex justify-center space-x-2 bg-pale-pink p-10">
-            <div class="h-full rounded-full border-solid border-[1px] border-white py-[15px] px-[23px]">
-                <img class="h-full object-contain" src="/img/facebook_logo.jpg" alt="facebook">
-            </div>
-            <div class="h-full rounded-full border-solid border-[1px] p-[15px] border-white">
-                <img class="h-full object-contain" src="/img/white-instagram-logo-transparent-background-7740.png" alt="instagram">
-            </div>
-            <div class="h-full rounded-full border-solid border-[1px] p-[14px] border-white">
-                <img class="h-full object-contain" src="/img/whatsapp_logo.png" alt="whatsapp">
-            </div>
-        </div>
-        <div class="w-screen bg-[#505050] p-[30px]">
-            <div class="pt-[30px] px-[22px] text-center text-white">
-                <p class="font-playfairdisplay text-[28px] uppercase">¡te llamamos!</p>
-                <p class="font-roboto text-[16px] mt-4">Déjanos tu número y te llamaremos con la mayor brevedad posible.
-                    Si lo prefieres puedes llamarnos al <b>984 390 856</b></p>
-                <form class="flex flex-col mt-3 ml-5" action="">
-                    <input class="border-[1px] border-solid bg-transparent py-2 pl-2 mr-4 focus:outline-none" type="text" id="name" placeholder="Nombre *" autocomplete="off" required>
-                    <input class="border-[1px] border-solid bg-transparent py-2 pl-2 mr-4 mt-2 focus:outline-none" type="number" id="telf" placeholder="Télefono *" autocomplete="off" required>
-                    <div class="flex space-x-3 text-left mt-5">
-                        <input class="appearance-none cursor-pointer h-[25px] w-[25px] p-1 bg-origin-padding bg-transparent rounded-md border-pale-pink border-2 border-solid chkbx" type="checkbox" name="read" id="read" required>
-                        <label class="" for="read">He leído y acepto la Política de Privacidad</label>
+            <div class="md:w-1/2 flex-[1]">
+                <div class="w-screen h-[35vw] flex justify-center space-x-2 bg-pale-pink p-[10%] md:w-full md:h-[18vw]">
+                    <div class="h-full rounded-full border-solid border-[1px] border-white py-[5%] px-[7%]">
+                        <img class="h-full object-contain" src="/img/facebook_logo.jpg" alt="facebook">
                     </div>
-                    <button class="mr-12 mt-8 py-3 font-roboto text-[12px] tracking-[0.4em] uppercase  border-solid border-[1px]" type="submit">Enviar</button>
-                </form>
+                    <div class="h-full rounded-full border-solid border-[1px] p-[5%] border-white">
+                        <img class="h-full object-contain" src="/img/white-instagram-logo-transparent-background-7740.png" alt="instagram">
+                    </div>
+                    <div class="h-full rounded-full border-solid border-[1px] p-[4%] border-white">
+                        <img class="h-full object-contain" src="/img/whatsapp_logo.png" alt="whatsapp">
+                    </div>
+                </div>
+                <div class="w-screen bg-[#505050] p-[30px] md:w-full">
+                    <div class="pt-[30px] px-[22px] text-center text-white">
+                        <p class="font-playfairdisplay text-[28px] uppercase">¡te llamamos!</p>
+                        <p class="font-roboto text-[16px] mt-4">Déjanos tu número y te llamaremos con la mayor brevedad posible.
+                            Si lo prefieres puedes llamarnos al <b>984 390 856</b></p>
+                        <form class="flex flex-col mt-3 ml-5" action="">
+                            <input class="border-[1px] border-solid bg-transparent py-2 pl-2 mr-4 focus:outline-none" type="text" id="name" placeholder="Nombre *" autocomplete="off" required>
+                            <input class="border-[1px] border-solid bg-transparent py-2 pl-2 mr-4 mt-2 focus:outline-none" type="number" id="telf" placeholder="Télefono *" autocomplete="off" required>
+                            <div class="flex space-x-3 text-left mt-5">
+                                <input class="appearance-none cursor-pointer h-[25px] w-[25px] p-1 bg-origin-padding bg-transparent rounded-md border-pale-pink border-2 border-solid chkbx" type="checkbox" name="read" id="read" required>
+                                <label class="" for="read">He leído y acepto la Política de Privacidad</label>
+                            </div>
+                            <button class="mr-12 mt-8 py-3 font-roboto text-[12px] tracking-[0.4em] uppercase  border-solid border-[1px]" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     </main>
-    <footer>
-        <div class="w-screen h-[500px] bg-black"></div>
+    <footer class="">
+        <div class="fixed flex space-x-1 w-[220px] right-4 bottom-7 z-40">
+            <div class="bg-[#f5f7f9] flex items-center pl-3 rounded-md font-roboto text-[12px] flex-[3] my-[7px] ">
+                <a href="#"><b>Citas</b> e información</a>
+            </div>
+            <a class="flex-[1]" href="#"><img src="/img/pngtree-whatsapp-phone-icon-png-image_6315989.png" alt="whatsapp"></a>
+        </div>
+        <div class="fixed flex justify-center items-center w-screen h-[50px] bg-[#efe5df] bottom-0 z-30 border-t-2 border-white lg:hidden">
+            <div class="font-roboto font-bold text-[14px] text-[#4e5960] uppercase"><a href="#">pide cita</a></div>
+        </div>
+        <div class="w-screen text-white bg-[#28292C] py-10 px-8 text-center lg:flex lg:justify-start lg:flex-[1]">
+            <figure class="flex flex-col items-center font-roboto text-[12px] leading-7">
+                <img class="w-1/2 max-w-[185px] object-contain lg:max-w-full lg:w-full" src="/img/clinica-grado-logo-w-300x90.png" alt="logo">
+                <figcaption>&copy; 2020 Grado Salud Dental SLP. <a href="#">Desarrollado por Piterrr</a><br>
+                    <a href="#">Aviso Legal y Política de Privacidad</a> | <a href="#">Política de cookies</a></figcaption>
+            </figure>
+            <div class="flex flex-wrap shrink-0 justify-around lg:flex-[2]">
+                <div class="flex flex-col items-center mt-6 font-roboto text-[16px]">
+                    <p class="font-playfairdisplay text-[22px] font-bold tracking-[0.075rem]">Ven a visitarnos</p>
+                    <div class="w-[10%] h-[2px] bg-pale-pink mt-2"></div>
+                    <p class="font-bold mt-5">C/ Alonso de Grado, 5, Grado, Asturias</p>
+                    <p>Lunes a jueves de 10:00h a 20:00h <br>
+                        Viernes de 10:00h a 16:00h</p>
+                    <a class="border-solid border-[1px] font-rob oto text-[12px] uppercase
+                    tracking-[0.2rem] py-3 px-8 mt-1" href="#">Llévame hasta allí</a>
+                </div>
+                <div class="flex flex-col mt-6 items-center">
+                    <p class="font-playfairdisplay text-[22px] font-bold tracking-[0.075rem]">Pide cita</p>
+                    <div class="w-[10%] h-[2px] bg-pale-pink mt-2"></div>
+                    <a class="mt-5" href="#"><b>984 390 856</b></a>
+                    <a href="#"><b>684 680 771</b></a>
+                    <p>consulta@clinicagrado.es</p>
+                    <a class="border-solid border-[1px] font-roboto text-[12px] uppercase
+                    tracking-[0.2rem] py-3 px-8 mt-1 underline" href="#">Llamar por teléfono</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
